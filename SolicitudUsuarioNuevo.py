@@ -4,38 +4,46 @@
 # - Divisible entre 3 y entre 5, el programa debe imprimir "FizzBuzz"
 # - Si no es divisible ni entre 3 ni entre 5, debe imprimir el número
 
-numero = int(input("Escribe un número: "))
+numero = int(input("Escribe un número: ")) # La variable con el nombre numero guarda el valor int y input que pregunta el numero al usuario
 
-if numero % 3 == 0 and numero % 5 == 0:
-    
-    print ("FlizzBuuz")
+try:
+   
+ if numero % 3 == 0 and numero % 5 == 0:    # Condicional if dice que numero es divise entre 3 y es igual a 0 y nuevo numero es divise entre 5 y es igual a 0
 
-elif numero % 3 == 0:
+ print ("FlizzBuuz")                         # Imprime FizzBuzz
 
-    print ("Fizz")
+ except ZeroDivisionError as excepcion:     # Excepcion ZeroDivisionError como excepcion
 
-elif numero % 5 == 0:
+ print("No se puede dividir por ningun nombre")      # Imprime No se puede dividir por ningun nombre
 
-    print ("Buzz")
+ elif numero % 3 == 0:                      # Condicional elif (y si no) dice que numero es divise entre 3 y es igual a 0
 
-else:
+    print ("Fizz")                         # Imprime Fizz
+
+ elif numero % 5 == 0:                      # Condicional elif (y si no) dice que numero es divise entre 5 y es igual a 0
+
+    print ("Buzz")                         # Imprime Buzz
+
+ else:                                      # ESi no se cumple ninguna de las condiciones anteriores
 
     print (numero)
 
-    
 
-#__________________________________________________________________________
+
+#_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 def nombre_usuario():
     
-    usuario = input("Escribe Tu Nombre:")
+    usuario = lent(input("Escribe Tu Nombre:"))
     
     if nombre_usuario % usuario == "pablo":
        
-        print ("Bienbenido Pablo, FizzBuzz")
+         print ("Bienbenido Pablo, FizzBuzz")
     
     else:
         
         print ("Usuario no admitido Fizz")
+
+    nombre_usuario()
 
     nombre_usuario()
