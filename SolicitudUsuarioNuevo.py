@@ -6,25 +6,20 @@
 
 numero = int(input("Escribe un número: ")) # La variable con el nombre numero guarda el valor int y input que pregunta el numero al usuario
 
-try:
-   
- if numero % 3 == 0 and numero % 5 == 0:    # Condicional if dice que numero es divise entre 3 y es igual a 0 y nuevo numero es divise entre 5 y es igual a 0
 
- print ("FlizzBuuz")                         # Imprime FizzBuzz
+if numero % 3 == 0 and numero % 5 == 0:    # Condicional if dice que numero es divise entre 3 y es igual a 0 y nuevo numero es divise entre 5 y es igual a 0
 
- except ZeroDivisionError as excepcion:     # Excepcion ZeroDivisionError como excepcion
+    print ("FizzBuzz")                         # Imprime FizzBuzz
 
- print("No se puede dividir por ningun nombre")      # Imprime No se puede dividir por ningun nombre
-
- elif numero % 3 == 0:                      # Condicional elif (y si no) dice que numero es divise entre 3 y es igual a 0
+elif numero % 3 == 0:                      # Condicional elif (y si no) dice que numero es divise entre 3 y es igual a 0
 
     print ("Fizz")                         # Imprime Fizz
 
- elif numero % 5 == 0:                      # Condicional elif (y si no) dice que numero es divise entre 5 y es igual a 0
+elif numero % 5 == 0:                      # Condicional elif (y si no) dice que numero es divise entre 5 y es igual a 0
 
     print ("Buzz")                         # Imprime Buzz
 
- else:                                      # ESi no se cumple ninguna de las condiciones anteriores
+else:                                      # ESi no se cumple ninguna de las condiciones anteriores
 
     print (numero)
 
@@ -43,7 +38,5 @@ def nombre_usuario():
     else:
         
         print ("Usuario no admitido Fizz")
-
-    nombre_usuario()
 
     nombre_usuario()
