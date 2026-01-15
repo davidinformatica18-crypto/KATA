@@ -1,3 +1,6 @@
+# import unittest
+from TEST import fizzbuzz
+
 # En esta kata, se solicita al usuario un numero, si este es:
 # - Divisible entre 3, el programa debe imprimir "Fizz"
 # - Divisible entre 5, el programa debe imprimit "Buzz"
@@ -23,24 +26,8 @@ try:
 
         print (numero)
 
-except ValueError:                                 # Excepcion para el caso que el usuario no ingrese un numero valido
+except EvaluaError:                                # Excepcion para el caso que el usuario no ingrese un numero valido
     print("Por favor, ingresa un número válido.")  # Imprime mensaje de error
-
-
-
-#_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
-def nombre_usuario():
-    
-    usuario = lent(input("Escribe Tu Nombre:"))
-    
-    if nombre_usuario % usuario == "pablo":
-       
-         print ("Bienbenido Pablo, FizzBuzz")
-    
-    else:
-        
-        print ("Usuario no admitido Fizz")
 
     nombre_usuario()
 
