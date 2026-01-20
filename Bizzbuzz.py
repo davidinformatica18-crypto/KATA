@@ -1,5 +1,6 @@
 # import unittest
-from TEST import fizzbuzz
+
+from funciones import fizzbuzz
 
 # En esta kata, se solicita al usuario un numero, si este es:
 # - Divisible entre 3, el programa debe imprimir "Fizz"
